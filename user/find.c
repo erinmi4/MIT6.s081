@@ -55,7 +55,7 @@ void find(char *path, char *target) {
             fprintf(2, "find: path too long\n");
             break;
         }
-
+        //先对目录的名称处理
         strcpy(buf, path);
         p = buf + strlen(buf);
         *p++ = '/';
