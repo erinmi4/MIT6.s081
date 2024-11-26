@@ -27,7 +27,8 @@ int main(int argc, char const *argv[])
 		}
 		close(p[1]);
 		exit(0);
-	}else{			// parent (send -> receive)
+	}else{			
+        // parent (send -> receive)
 		pid = getpid();
 		char info[2] = "a";
 		char buf[2];
